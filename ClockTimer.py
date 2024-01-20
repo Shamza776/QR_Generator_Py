@@ -81,7 +81,7 @@ threads and then calling the active count function,the enumarate function and pe
 ##understanding basis of multithreading
 '''a function that will occur the same time as we wait for user input'''
 
-done = False
+'''done = False
 def work():
     count = 0
     while not done:
@@ -91,11 +91,11 @@ def work():
         #print('press enter to exit loop')
 threading.Thread(target=work).start()
 user = input('press enter to exit loop')
-done = True
+done = True'''
 
 
 '''example of a code from chat gpt explaning threading concept of how multiple files are downloaded concurrently'''
-import threading
+'''import threading
 import time
 
 def download_file(file_name):
@@ -118,4 +118,33 @@ for file in files_to_download:
 for thread in threads:
     thread.join()
 
-print("All downloads completed.")
+print("All downloads completed.") '''
+
+'''CLOCK TIMER'''
+##when we're counting down backwards
+'''user = int(input('enter time in seconds: '))
+count = user 
+while count!= 1:
+    time.sleep(1)
+    count -=1
+    print(count)
+print('time is up!') '''
+
+'''#testing
+count = int(input('enter number'));
+print(count)
+second = count % 60
+print(second) '''
+##counting down onwards
+#user = int(input('enter time in seconds: '))
+count = int(input('enter time in seconds: '))
+while count > 0:
+    count -=1
+    time.sleep(1)
+    seconds = (count % 60)
+    minutes = int((count / 60)%60)
+    hours = int((count/ 3600) % 60)
+    #print( f" {hours:02}:{minutes:02}:{seconds:02}")
+    time_format = "{:02}: {:02}: {:02}".format(hours, minutes, seconds)
+    print(time_format)
+print('time is up!')
