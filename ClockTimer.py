@@ -135,6 +135,8 @@ count = int(input('enter number'));
 print(count)
 second = count % 60
 print(second) '''
+
+
 ##counting down onwards
 #user = int(input('enter time in seconds: '))
 count = int(input('enter time in seconds: '))
