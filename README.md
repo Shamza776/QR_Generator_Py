@@ -38,4 +38,10 @@ The Rock, Paper, Scissors project is a simple game where the computer randomly s
 
 **File:** `rock-paper-scissors.py`
 
+##Clock Timer Project
+
+###Description
+
+The Clock Timer Project is a simple timer I made   
+
 
