@@ -113,7 +113,7 @@ backspace_button.pack(side = "right") '''
 
 '''check boxes'''
 
-def display():
+'''def display():
     if(x.get()==1):  ##if  
         print('you agree')
     else:
@@ -126,7 +126,13 @@ check_button = Checkbutton(window,
                             offvalue=0, ##stored in the variable if its toggled off....False,, "no"
                             command= display 
                            )
-check_button.pack()
+check_button.pack() '''
+
+label1 = Label (window,
+    text = "heyy",
+    bg = "red"
+)
+label1.pack()
 
 
 
