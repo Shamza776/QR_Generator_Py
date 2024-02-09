@@ -13,11 +13,12 @@ print("line not  included in the output of the above statement") '''
 '''The outlook'''
 
 possibleNumbers = [1,2,3,4,5,6,7,8,9]
+board = [[1,2,3], [4,5,6],  [7,8,9]]  ##2D list containg the values of the board
 def outlookBoard ():
     print("welcome to the Tic Tac Toe game")
     print("--------------------------------\n")
     #possibleNumbers = [1,2,3,4,5,6,7,8,9]
-    board = [[1,2,3], [4,5,6],  [7,8,9]]  ##2D list containg the values of the board
+    #board = [[1,2,3], [4,5,6],  [7,8,9]]  ##2D list containg the values of the board
     row = 3
     col = 3
     y = 1
