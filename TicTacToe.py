@@ -57,8 +57,10 @@ def modifyBoard(num, turn):   #num is the  number that has been chosen by the us
 '''def checkForWinner():
     global board
     ##X axis the several ways of winning in the x axis
-    if ((board[0][0]==board[1][1]==board[2][2])or \
-        (board[0][2]==board[1][1]==board[2]
+    if ((board[0][0]==board[0][1]==board[0][2])or \
+        (board[1][0]==board[1][1]==board[1][2])or  \
+        (board[2][0]==board[2][1]==board[2][2])
+        ):
 
     ##Y axis '''
 
@@ -70,7 +72,7 @@ while(leaveLoop == False):     #while this statement is true we want to operate 
    ##it's the player's turn
     if(turnCounter % 2 == 1): ## if the turn counter divided by two and the remainder is 1, we know it's ur turn
         outlookBoard()
-        numPicked = int(input('\nEnter your move: (no. between 1 and 9); '))
+        numPicked = int(input("\nEnter your move: (no. between 1 and 9); "))
         ##validate the input from the user
         if(numPicked >=1 or numPicked <= 9):  #meaning it's a valid choice from the user
             modifyBoard(numPicked,  "X")           #add the mark to the board
@@ -86,7 +88,7 @@ while(leaveLoop == False):     #while this statement is true we want to operate 
                 modifyBoard(cpuChoice,"O")          #add the mark to the board
                 possibleNumbers.remove(cpuChoice)   ##exclude the chosen number from possibilities
             turnCounter += 1
-
+            break
     
             
             
